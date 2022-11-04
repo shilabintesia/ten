@@ -12,13 +12,16 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
+
     const from = location.state?.from?.pathname || '/';
+
 
     const handleSubmit = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
+
 
         signIn(email, password)
             .then(result => {
@@ -42,6 +45,7 @@ const Login = () => {
             })
     }
 
+
     return (
         <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -64,5 +68,6 @@ const Login = () => {
         </Form>
     );
 };
+
 
 export default Login;

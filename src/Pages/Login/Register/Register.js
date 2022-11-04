@@ -5,10 +5,12 @@ import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
+
 const Register = () => {
     const [error, setError] = useState('');
     const [accepted, setAccepted] = useState(false);
     const { createUser, updateUserProfile, verifyEmail } = useContext(AuthContext);
+
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -18,6 +20,7 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
         // console.log(name, photoURL, email, password);
+        
 
         createUser(email, password)
             .then(result => {
@@ -91,5 +94,6 @@ const Register = () => {
         </Form>
     );
 };
+
 
 export default Register;

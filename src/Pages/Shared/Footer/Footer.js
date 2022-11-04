@@ -5,6 +5,7 @@ const Footer = () => {
         <div className="main-footer">
       <div className="container">
         <div className="row">
+
           {/* Column1 */}
           <div className="col">
             <h4>Max LARN</h4>
@@ -13,6 +14,7 @@ const Footer = () => {
               <li>123 Streeet Pabna </li>
             </h1>
           </div>
+
           {/* Column2 */}
           <div className="col">
             <h4>Courses</h4>
@@ -22,9 +24,10 @@ const Footer = () => {
               <li>BOOTSTRAP</li>
             </ui>
           </div>
+
           {/* Column3 */}
           <div className="col">
-            <h4>WELL ANOTHER COLUMN</h4>
+            <h4>WELL ANOTHER COURSES</h4>
             <ui className="list-unstyled">
               <li>REACT</li>
               <li>JAVASCRIPT</li>

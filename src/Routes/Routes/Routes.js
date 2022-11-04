@@ -14,7 +14,6 @@ import TermsAndConditions from "../../Pages/Others/TermsAndContions/TermsAndCond
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
-
 export const routes = createBrowserRouter([
     {
         path: '/',
@@ -67,9 +66,7 @@ export const routes = createBrowserRouter([
           {
             path:'*',
             element:<ErrorPage></ErrorPage>
-          }
-
-          
+          }  
         
         ]
     }

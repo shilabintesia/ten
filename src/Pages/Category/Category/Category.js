@@ -4,6 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import LeftSideNav from '../../Shared/LeftSideNav/LeftSideNav';
 import NewsSummaryCard from '../../Shared/NewsSummaryCard/NewsSummaryCard';
 
+
 const Category = () => {
     const categoryNews = useLoaderData();
     return (
@@ -28,5 +29,6 @@ const Category = () => {
         </div>
     );
 };
+
 
 export default Category;

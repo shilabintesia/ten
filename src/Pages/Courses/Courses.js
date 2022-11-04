@@ -6,6 +6,7 @@ import NewsSummaryCard from '../Shared/NewsSummaryCard/NewsSummaryCard';
 
 
 const Courses = () => {
+
     const allNews = useLoaderData();
     return (
         <div>
@@ -30,5 +31,6 @@ const Courses = () => {
         </div>
     );
 };
+
 
 export default Courses;
